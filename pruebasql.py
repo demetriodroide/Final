@@ -54,8 +54,8 @@ try:
     productos_existentes = db.query(ProductoORM).first()
     if not productos_existentes:
         productos = [
-            ProductoORM(id=1, nombre="leche", precio=1.98, stock=23, disponible=True),
-            ProductoORM(id=2, nombre="yogur", precio=1.8, stock=3, disponible=True),
+            ProductoORM(id=1, nombre="lechada", precio=1.98, stock=23, disponible=True),
+            ProductoORM(id=2, nombre="yogures", precio=1.8, stock=3, disponible=True),
             ProductoORM(id=3, nombre="galletas", precio=3.38, stock=223, disponible=False),
         ]
         db.add_all(productos)
